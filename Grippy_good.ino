@@ -138,7 +138,10 @@ if(curLeftSW == LOW && curRightSW == LOW && (prevLeftSW == HIGH || prevRightSW =
     {
         pulses[4] += 40; // Wrist rotate left
     }
-
+    else if(curRightSW == LOW)
+    {
+        pulses[4] -= 40; // Wrist rotate right
+    }
     prevLeftSW  = curLeftSW;
     prevRightSW = curRightSW;
 
