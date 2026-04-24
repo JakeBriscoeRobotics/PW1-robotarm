@@ -133,7 +133,7 @@ if(curLeftSW == LOW && curRightSW == LOW && (prevLeftSW == HIGH || prevRightSW =
     pulses[3] = 800;
     pulses[4] = 1500;
   
-}    // Rotate Wrist Draft
+}    // Rotate Wrist Draft - JB3804
     else if(curLeftSW == LOW)
     {
         pulses[4] += 40; // Wrist rotate left
